@@ -20,6 +20,10 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 button {
@@ -42,7 +46,8 @@ button {
 #form-habits {
   display: flex;
 
-  padding: 0 48px;
+  padding: 183px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -102,4 +107,10 @@ input:checked {
   background: #4c1d95;
   border: 2px solid #6d28d9;
   border-radius: 8px;
+}
+
+@media (max-width: 520px) {
+  button div {
+    display: none;
+  }
 }
